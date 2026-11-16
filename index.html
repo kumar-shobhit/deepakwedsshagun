@@ -67,6 +67,10 @@ section{position:relative;padding-block:84px;text-align:center}
 .couple .weds{font-family:var(--serif);font-style:italic;font-size:.3em;color:var(--gold);vertical-align:middle;margin:0 .35em;flex-shrink:0}
 @media (max-width:767px){.couple{font-size:clamp(2.2rem,8vw,3.8rem);line-height:1.05;flex-wrap:wrap;row-gap:2px}.couple .weds{margin:0 .2em}}
 @media (min-width:768px){.couple{font-size:clamp(2.8rem,12vw,5rem)}}
+.date-card{width:min(100%,360px);margin:30px auto 0;aspect-ratio:2.3;border-radius:16px;overflow:hidden;
+  background:transparent;border:1px solid var(--gold-soft);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.date-card .day{font-family:var(--serif);font-size:clamp(1.8rem,7vw,2.3rem);font-weight:500;color:var(--ink);line-height:1.2}
+.date-card .small{font-family:var(--caps);font-weight:500;font-size:.85rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
 .countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;width:min(100%,380px);margin:26px auto 0}
 .countdown div{border-top:1px solid var(--gold-soft);padding-top:8px}
 .countdown b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,7vw,2.3rem);font-variant-numeric:tabular-nums lining-nums;line-height:1.1}
@@ -198,6 +202,11 @@ footer .tag{font-family:var(--caps);font-weight:600;font-size:1.1rem;letter-spac
       </div>
       <div class="ornament" aria-hidden="true"><span>✦</span></div>
       <p class="eyebrow">We are getting married</p>
+      <div class="date-card" aria-label="Wedding date: Wednesday, 2nd December 2026, Rewari, Haryana">
+        <span class="small">Wednesday</span>
+        <span class="day">2nd December 2026</span>
+        <span class="small">Rewari, Haryana</span>
+      </div>
       <div class="countdown" aria-label="Countdown to the wedding">
         <div><b id="cd-d">00</b><span>Days</span></div>
         <div><b id="cd-h">00</b><span>Hours</span></div>
